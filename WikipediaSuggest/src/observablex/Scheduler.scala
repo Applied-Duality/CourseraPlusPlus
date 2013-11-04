@@ -1,7 +1,8 @@
 package observablex
 
-import rx.lang.scala._
 import java.util.concurrent.Executor
+import rx.lang.scala.{ImplicitFunctionConversions, Subscription}
+import rx.util.functions.Action0
 
 object Scheduler {
   lazy val NewThreadScheduler = Scheduler(rx.concurrency.NewThreadScheduler.getInstance())
@@ -16,16 +17,17 @@ object Scheduler {
 }
 
 trait Scheduler {
-  import ImplicitFunctionConversions._
 
   def inner: rx.Scheduler
 
   def schedule(work: => Unit): Subscription = {
-    inner.schedule(() => work)
+    inner.schedule(new Action0(){
+      def call(){ () => work }
+    })
   }
 
   def schedule(work: Scheduler=>Subscription): Subscription = {
-    val f = scalaFunction2ToRxFunc2((x: rx.Scheduler,e: Int) => {
+    val f = ImplicitFunctionConversions.scalaFunction2ToRxFunc2((x: rx.Scheduler,e: Int) => {
       work(Scheduler(x))
     })
     Subscription(inner.schedule(0,f))

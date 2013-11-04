@@ -1,7 +1,7 @@
 package bindings
 
-import org.json4s._
 import scala.util.Try
+import org.json4s.JValue
 
 object Country {
   def apply(raw: JValue): Country = {

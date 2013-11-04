@@ -1,13 +1,15 @@
 package gui
 
-import observablex.Subscription
-import rx.lang.scala._
 import scala.collection.mutable.ListBuffer
 import scala.swing.event.{ValueChanged, ButtonClicked}
 import scala.swing._
-import rx.subscriptions._
 import swing.Swing._
 import Orientation._
+import java.lang.String
+import scala.Predef.String
+import observablex.Subscription
+import rx.lang.scala.Observable
+import rx.subscriptions.CompositeSubscription
 
 object Swing extends SimpleSwingApplication {
 

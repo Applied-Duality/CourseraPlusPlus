@@ -1,8 +1,8 @@
 package observablex
 
 import rx.lang.scala.Subscription
-import rx.subscriptions.Subscriptions
 import rx.util.functions.Action0
+import rx.subscriptions.Subscriptions
 
 
 object Subscription {

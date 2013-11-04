@@ -1,10 +1,12 @@
 package observablex
 
-import rx.lang.scala._
 import scala.concurrent.{Future, ExecutionContext}
 import scala.util._
 import scala.util.Success
 import scala.util.Failure
+import java.lang.{Throwable, Iterable}
+import scala.Iterable
+import rx.lang.scala.Observable
 
 object ObservableEx {
 
@@ -33,7 +35,7 @@ object ObservableEx {
       ObservableEx(f)
   }
 
-  implicit def ToObservable[T](f: Iterable[T])(implicit s: Scheduler): Observable[T] = {
+  implicit def ToObservable[T](f: scala.Iterable[T])(implicit s: Scheduler): Observable[T] = {
     ObservableEx(f)
   }
 
@@ -50,7 +52,7 @@ object ObservableEx {
     })
   }
 
-  def apply[T](ss: Iterable[T])(implicit s: Scheduler): Observable[T] = {
+  def apply[T](ss: scala.Iterable[T])(implicit s: Scheduler): Observable[T] = {
      Observable(observer => {
        s.schedule({
          Try(ss.foreach(observer.onNext(_))) match {

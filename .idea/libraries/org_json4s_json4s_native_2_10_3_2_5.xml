@@ -1,0 +1,38 @@
+<component name="libraryTable">
+  <library name="org.json4s:json4s-native_2.10:3.2.5" type="repository">
+    <properties maven-id="org.json4s:json4s-native_2.10:3.2.5" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/json4s-native_2.10-3.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-core_2.10-3.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-ast_2.10-3.2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-library-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/paranamer-2.5.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mockito-all-1.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scalap-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-compiler-2.10.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-reflect-2.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/lib/paranamer-2.5.6-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-native_2.10-3.2.5-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-core_2.10-3.2.5-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-ast_2.10-3.2.5-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-library-2.10.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mockito-all-1.9.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scalap-2.10.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-compiler-2.10.0-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-reflect-2.10.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/json4s-native_2.10-3.2.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-core_2.10-3.2.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/json4s-ast_2.10-3.2.5-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-library-2.10.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/paranamer-2.5.6-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mockito-all-1.9.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scalap-2.10.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-compiler-2.10.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-reflect-2.10.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

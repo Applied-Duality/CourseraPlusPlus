@@ -1,8 +1,8 @@
 package bindings
 
-import org.json4s._
 import java.util.Date
 import scala.util.Try
+import org.json4s.JValue
 import observablex.Scheduler
 
 object EarthQuake {
