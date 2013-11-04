@@ -21,8 +21,8 @@ trait Scheduler {
   def inner: rx.Scheduler
 
   def schedule(work: => Unit): Subscription = {
-    inner.schedule(new Action0(){
-      def call(){ () => work }
+   inner.schedule(new Action0(){
+      def call(){ work }
     })
   }
 

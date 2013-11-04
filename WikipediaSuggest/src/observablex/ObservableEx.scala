@@ -29,29 +29,7 @@ object ObservableEx {
      })
   }
 
-  implicit def ToObservable[T](f: Future[T])
-     (implicit execContext: ExecutionContext): Observable[T] = {
-      ObservableEx(f)
-  }
-
-  implicit def ToObservable[T](f: scala.Iterable[T])(implicit s: Scheduler): Observable[T] = {
-    ObservableEx(f)
-  }
-
-  def never[T](): Observable[T] = {
-    Observable(observer => {
-      Subscription({})
-    })
-  }
-
-  def error[T](error: Throwable): Observable[T] = {
-    Observable(observer => {
-      observer.onError(error)
-      Subscription({})
-    })
-  }
-
-  def apply[T](ss: scala.Iterable[T])(implicit s: Scheduler): Observable[T] = {
+  def apply[T](ss: Iterable[T])(implicit s: Scheduler): Observable[T] = {
      Observable(observer => {
        s.schedule({
          Try(ss.foreach(observer.onNext(_))) match {

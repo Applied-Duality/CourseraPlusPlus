@@ -45,7 +45,8 @@ object Search {
 
     async {
       val service = "http://ws.geonames.org/countrySubdivisionJSON?"
-      val response = await { Http(url(service+s"lat=${location.Latitude}&lng=${location.Longitude}").OK(as.String)) }
+      val s = service+s"lat=${location.Latitude}&lng=${location.Longitude}"
+      val response = await { Http(url(s).OK(as.String)) }
       val json = JsonParser.parse(response)
       Country(json)
     }
@@ -66,7 +67,7 @@ object Search {
   def quakesWithCountry() : Observable[(EarthQuake, Country)] = {
     for {
       qs <- ObservableEx(Search.usgs())
-      q <-  ObservableEx(qs) (s)
+      q <-  ObservableEx(qs)
       l <-  ObservableEx(Search.reverseGeoCode(q.Location))
     } yield {
       (q,l)
