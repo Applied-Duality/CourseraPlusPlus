@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7942987d-56b2-4b57-956e-5353ec7f682c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/Reaction.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gui/Swing.scala" />
+    <list default="true" id="7942987d-56b2-4b57-956e-5353ec7f682c" name="Default" comment="Added GUI">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WikipediaSuggest.scala" afterPath="$PROJECT_DIR$/src/WikipediaSuggest.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WikipediaSuggest.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/WikipediaSuggest.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580242398" ignored="false" />
+    <file path="/WikipediaSuggest.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580600630" ignored="false" />
     <file path="$PROJECT_DIR$/../TaskUsingFuture/src/Sample.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381765597695" ignored="false" />
     <file path="/Sample.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381765541090" ignored="false" />
     <file path="$PROJECT_DIR$/../Swing/src/Swing.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381668045901" ignored="false" />
@@ -21,7 +19,7 @@
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/concurrent/Future.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381156940348" ignored="false" />
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/concurrent/Promise.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381166905301" ignored="false" />
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/concurrent/impl/Future.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381173931963" ignored="false" />
-    <file path="/fragment.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383579775830" ignored="false" />
+    <file path="/fragment.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580673673" ignored="false" />
     <file path="/Search.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381433678108" ignored="false" />
     <file path="/EarthQuake.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383574675032" ignored="false" />
     <file path="/ObservableEx.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383574552888" ignored="false" />
@@ -35,7 +33,7 @@
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/util/Try.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381595379169" ignored="false" />
     <file path="$PROJECT_DIR$/../RemoteObservable/src/Reactive.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381826084081" ignored="false" />
     <file path="/Reactive.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381814226594" ignored="false" />
-    <file path="/Dummy.txt" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383578678748" ignored="false" />
+    <file path="/Dummy.txt" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580695689" ignored="false" />
     <file path="$PROJECT_DIR$/../RxSamples/RxSamples.iml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381829240563" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/main.iml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381829309323" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/scala/nodescala/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382351837675" ignored="false" />
@@ -51,14 +49,14 @@
     <file path="$USER_HOME$/Coursera/src/main/scala/nodescala/package.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382351732208" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/scala/nodescala/X.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381946965671" ignored="false" />
     <file path="$USER_HOME$/Quasar/src/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382020886230" ignored="false" />
-    <file path="$USER_HOME$/SKI/src/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382193736884" ignored="false" />
+    <file path="$USER_HOME$/SKI/src/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580655117" ignored="false" />
     <file path="$USER_HOME$/RxScalaHandsonLab/src/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382151481115" ignored="false" />
     <file path="$USER_HOME$/Coursera/project/Build.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382351732208" ignored="false" />
     <file path="$USER_HOME$/ReactiveRemote/RemoteObservable/src/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382353351830" ignored="false" />
     <file path="$USER_HOME$/ReactiveRemote/RemoteObservable/license" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382353126825" ignored="false" />
     <file path="/license" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382353126825" ignored="false" />
-    <file path="$PROJECT_DIR$/../CourseExamples/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580292696" ignored="false" />
-    <file path="$PROJECT_DIR$/../Hello Java/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580292696" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseExamples/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580792997" ignored="false" />
+    <file path="$PROJECT_DIR$/../Hello Java/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383580792997" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +108,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/WikipediaSuggest.scala" line="15" class="WikipediaSuggest$" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -122,9 +137,21 @@
       <file leaf-file-name="WikipediaSuggest.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/WikipediaSuggest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="283" selection-end="283" vertical-scroll-proportion="0.57507986">
+            <state line="10" column="20" selection-start="227" selection-end="227" vertical-scroll-proportion="0.5263158">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scheduler.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/observablex/Scheduler.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#21#43#0" expanded="true" />
+                <element signature="e#400#1122#1" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -139,13 +166,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Search.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/search/Search.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="0" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#581#921#0" expanded="false" />
+                <element signature="e#925#1258#0" expanded="false" />
+                <element signature="e#1262#1601#0" expanded="false" />
+                <element signature="e#1605#1934#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Swing.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gui/Swing.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="34" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#13#44#0" expanded="true" />
-                <element signature="e#305#1865#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -317,6 +357,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="Repository.Attach.Sources" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
@@ -338,11 +379,11 @@
     <configuration default="false" name="WikipediaSuggest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="WikipediaSuggest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
@@ -489,7 +530,11 @@
       <created>1383578685520</created>
       <updated>1383578685520</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added GUI">
+      <created>1383580306296</created>
+      <updated>1383580306296</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -521,7 +566,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42813456" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42774567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -530,8 +575,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24903475" sideWeight="0.914611" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2890625" sideWeight="0.6570327" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34296724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2890625" sideWeight="0.6473988" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35260117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -581,7 +626,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added missing files project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GUI" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -598,6 +643,7 @@
     <MESSAGE value="Initial commit for Exercise 4" />
     <MESSAGE value="Added whole project" />
     <MESSAGE value="Added missing files project" />
+    <MESSAGE value="Added GUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -672,34 +718,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/observablex/Scheduler.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#99#382#1" expanded="false" />
-            <element signature="e#400#1122#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/observablex/Subscription.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="43" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#21#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/search/Search.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#581#921#0" expanded="false" />
-            <element signature="e#925#1258#0" expanded="false" />
-            <element signature="e#1262#1601#0" expanded="false" />
-            <element signature="e#1605#1934#0" expanded="false" />
-            <element signature="e#1938#2180#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -739,14 +762,35 @@
         <state line="11" column="34" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#13#44#0" expanded="true" />
-            <element signature="e#305#1865#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/observablex/Scheduler.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#21#43#0" expanded="true" />
+            <element signature="e#400#1122#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/search/Search.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2012" selection-end="2012" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#581#921#0" expanded="false" />
+            <element signature="e#925#1258#0" expanded="false" />
+            <element signature="e#1262#1601#0" expanded="false" />
+            <element signature="e#1605#1934#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WikipediaSuggest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="283" selection-end="283" vertical-scroll-proportion="0.57507986">
+        <state line="10" column="20" selection-start="227" selection-end="227" vertical-scroll-proportion="0.5263158">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
