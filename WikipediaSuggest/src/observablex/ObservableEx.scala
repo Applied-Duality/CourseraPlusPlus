@@ -4,8 +4,7 @@ import scala.concurrent.{Future, ExecutionContext}
 import scala.util._
 import scala.util.Success
 import scala.util.Failure
-import java.lang.{Throwable, Iterable}
-import scala.Iterable
+import java.lang.Throwable
 import rx.lang.scala.Observable
 
 object ObservableEx {

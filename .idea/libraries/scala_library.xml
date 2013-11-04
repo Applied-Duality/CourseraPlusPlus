@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="scala-library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/lib/scala-library.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/lib/scala-swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/lib/scala-actors.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/lib/scala-reflect.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Scala-libs/async-master/target/scala-2.10/scala-async_2.10-1.0.0-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../Scala-libs/async-master/target/scala-2.10/scala-async_2.10-1.0.0-SNAPSHOT-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Scala-libs/rxjava-core-0.14.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/src/scala-swing-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/src/scala-actors-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../scala-2.10.2/src/scala-reflect-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Scala-libs/async-master/target/scala-2.10/scala-async_2.10-1.0.0-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
