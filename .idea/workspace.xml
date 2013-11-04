@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7942987d-56b2-4b57-956e-5353ec7f682c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/scala_library.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/src/Main.scala" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/Main.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/src/observablex/ObservableEx.scala" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/observablex/ObservableEx.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/WikipediaSuggest.iml" afterPath="$PROJECT_DIR$/WikipediaSuggest/WikipediaSuggest.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WikipediaSuggest.iws" />
@@ -15,7 +11,7 @@
     <file path="/Sample.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381765541090" ignored="false" />
     <file path="$PROJECT_DIR$/../Swing/src/Swing.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381668045901" ignored="false" />
     <file path="/Swing.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381503886883" ignored="false" />
-    <file path="$PROJECT_DIR$/../Swing/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590608845" ignored="false" />
+    <file path="$PROJECT_DIR$/../Swing/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590689888" ignored="false" />
     <file path="$PROJECT_DIR$/../Swing/.idea/misc.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381061842092" ignored="false" />
     <file path="$PROJECT_DIR$/../Hello Scala/src/Hello.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381677941421" ignored="false" />
     <file path="/Hello.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381677923535" ignored="false" />
@@ -36,7 +32,7 @@
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/util/Try.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381595379169" ignored="false" />
     <file path="$PROJECT_DIR$/../RemoteObservable/src/Reactive.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381826084081" ignored="false" />
     <file path="/Reactive.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381814226594" ignored="false" />
-    <file path="/Dummy.txt" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383589662803" ignored="false" />
+    <file path="/Dummy.txt" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590727742" ignored="false" />
     <file path="$PROJECT_DIR$/../RxSamples/RxSamples.iml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381829240563" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/main.iml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381829309323" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/scala/nodescala/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382351837675" ignored="false" />
@@ -58,8 +54,8 @@
     <file path="$USER_HOME$/ReactiveRemote/RemoteObservable/src/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382353351830" ignored="false" />
     <file path="$USER_HOME$/ReactiveRemote/RemoteObservable/license" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382353126825" ignored="false" />
     <file path="/license" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382353126825" ignored="false" />
-    <file path="$PROJECT_DIR$/../CourseExamples/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590608845" ignored="false" />
-    <file path="$PROJECT_DIR$/../Hello Java/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590608845" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseExamples/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590689888" ignored="false" />
+    <file path="$PROJECT_DIR$/../Hello Java/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590689888" ignored="false" />
     <file path="/Scheduler.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383588287505" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -313,6 +309,38 @@
               <option name="myItemId" value="WikipediaSuggest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-compiler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-reflect.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-compiler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -335,6 +363,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="search" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,7 +627,11 @@
       <created>1383589692626</created>
       <updated>1383589692626</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Nearly back to a working state">
+      <created>1383590747233</created>
+      <updated>1383590747233</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -606,7 +656,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1024" height="614" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32947975" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -623,7 +673,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2109375" sideWeight="0.672447" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32755297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32755297" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -673,7 +723,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding files again" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nearly back to a working state" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -693,6 +743,7 @@
     <MESSAGE value="Added GUI" />
     <MESSAGE value="testing main" />
     <MESSAGE value="Adding files again" />
+    <MESSAGE value="Nearly back to a working state" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
