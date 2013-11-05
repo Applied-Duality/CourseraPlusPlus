@@ -19,14 +19,29 @@ object Search {
 
   implicit val formats = org.json4s.DefaultFormats
 
-  def wikipedia(term: String): Future[List[String]] = {
+  def wikipediaSuggestion(term: String): Future[List[String]] = {
     async {
       log("querying: " + term)
-      val search = "http://en.wikipedia.org/w/api.php?action=opensearch&format=json&search="
-      val response = await { Http(url(search+term).OK(as.String)) }
+      val search = "http://en.wikipedia.org/w/api.php?action=opensearch&format=json&limit=15&search="
+      val response = await { Http(url(search + term).OK(as.String)) }
       val json = JsonParser.parse(response)
       val words = json(1)
       words.extract[List[String]]
+    }
+  }
+
+  def wikipediaPage(term: String): Future[String] = {
+    async {
+      val search = "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page="
+      val response = await { Http(url(search + term).OK(as.String)) }
+      val json = JsonParser.parse(response)
+      val text = for {
+        JObject(child) <- json
+        JField("parse", JObject(fields)) <- child
+        JField("text", JObject(tfields)) <- fields
+        JField("*", JString(text)) <- tfields
+      } yield text
+      text.head
     }
   }
 

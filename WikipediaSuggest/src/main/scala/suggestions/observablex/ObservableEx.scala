@@ -14,8 +14,11 @@ object ObservableEx {
   def apply[T](f: Future[T])(implicit execContext: ExecutionContext): Observable[T] = {
     val s = rx.subjects.AsyncSubject.create[T]()
     f.onComplete {
-      case Failure(e) => { s.onError(e) }
-      case Success(c) => { s.onNext(c); s.onCompleted() }
+      case Failure(e) => 
+        s.onError(e)
+      case Success(c) =>
+        s.onNext(c)
+        s.onCompleted()
     }
     Observable(s)
   }
