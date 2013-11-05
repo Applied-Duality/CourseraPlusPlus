@@ -11,7 +11,7 @@ object Subscription {
 
   def apply(unsubscribe: => Unit) : Subscription = {
     Subscriptions.create(new Action0(){
-     def call() { unsubscribe }
+      def call() { unsubscribe }
     })
   }
 }

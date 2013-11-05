@@ -31,7 +31,6 @@ object Search {
   }
 
   def google(term: String): Future[List[String]] = {
-
     async {
       val search = "http://suggestqueries.google.com/complete/search?client=firefox&q="
       val response = await { Http(url(search+term).OK(as.String)) }
@@ -42,7 +41,6 @@ object Search {
   }
 
   def reverseGeoCode(location: GeoCoordinate): Future[Country] = {
-
     async {
       val service = "http://ws.geonames.org/countrySubdivisionJSON?"
       val s = service+s"lat=${location.Latitude}&lng=${location.Longitude}"
@@ -54,11 +52,10 @@ object Search {
   }
 
   def usgs() : Future[List[EarthQuake]] = {
-
     async {
       val quakes = "http://earthquake.usgs.gov/earthquakes/feed/geojson/all/day"
       val response = await {  Http(url(quakes).OK(as.String)) }
-      val json = (JsonParser.parse(response)\"features").children
+      val json = (JsonParser.parse(response) \ "features").children
       Try(json.map(EarthQuake(_))).getOrElse(List())
     }
 
@@ -67,10 +64,10 @@ object Search {
   def quakesWithCountry() : Observable[(EarthQuake, Country)] = {
     for {
       qs <- ObservableEx(Search.usgs())
-      q <-  ObservableEx(qs)
-      l <-  ObservableEx(Search.reverseGeoCode(q.Location))
+      q  <- ObservableEx(qs)
+      l  <- ObservableEx(Search.reverseGeoCode(q.Location))
     } yield {
-      (q,l)
+      (q, l)
     }
   }
 }
