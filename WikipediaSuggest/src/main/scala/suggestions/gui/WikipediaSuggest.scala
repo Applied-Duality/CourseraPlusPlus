@@ -15,6 +15,28 @@ import observablex._
 import search._
 import scala.util.{ Try, Success, Failure }
 
+object WikipediaSuggestUtilities {
+
+  def wikiResponseStream(term: String) = ObservableEx(Search.wikipedia(term))
+
+  def tryStream[T](s: Observable[T]) = {
+    s map { Success(_) } onErrorReturn {
+      t => Failure(t)
+    }
+  }
+
+  def responseStream(requestStream: Observable[String]): Observable[Try[List[String]]] = requestStream map { term => 
+    val s = tryStream(wikiResponseStream(term))
+    // s.subscribe(
+    //   x => log(s"for $term: received response $x"),
+    //   t => log(s"for $term: error in response: ${t.getMessage}"),
+    //   () => log(s"for $term: completed.")
+    // )
+    s
+  } flatten
+
+}
+
 object WikipediaSuggest extends SimpleSwingApplication {
 
   def top = new MainFrame {
@@ -48,23 +70,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
 
     val textStream = textBoxValues(text)
 
-    def wikiResponseStream(term: String) = ObservableEx(Search.wikipedia(term))
-
-    def tryStream[T](s: Observable[T]) = {
-      s map { Success(_) } onErrorReturn {
-        t => Failure(t)
-      }
-    }
-
-    val responseStream: Observable[Try[List[String]]] = textStream map { term => 
-      val s = tryStream(wikiResponseStream(term))
-      s.subscribe(
-        x => log(s"for $term: received response $x"),
-        t => log(s"for $term: error in response: ${t.getMessage}"),
-        () => log(s"for $term: completed.")
-      )
-      s
-    } flatten
+    val responseStream = WikipediaSuggestUtilities.responseStream(textStream)
 
     val responseSubscription = responseStream.observeOn(eventScheduler) subscribe { _ match {
       case Success(responses) =>
