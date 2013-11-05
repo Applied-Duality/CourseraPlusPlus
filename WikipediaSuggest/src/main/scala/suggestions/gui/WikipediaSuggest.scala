@@ -64,7 +64,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
         () => log(s"for $term: completed.")
       )
       s
-    } concat
+    } flatten
 
     val responseSubscription = responseStream.observeOn(eventScheduler) subscribe { _ match {
       case Success(responses) =>
