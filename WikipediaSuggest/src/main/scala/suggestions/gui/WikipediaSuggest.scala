@@ -7,7 +7,7 @@ import swing.Swing._
 import Orientation._
 import java.lang.String
 import scala.Predef.String
-import observablex.Subscription
+import observablex.SubscriptionEx
 import rx.subscriptions.CompositeSubscription
 import rx.lang.scala.Observable
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -25,10 +25,14 @@ object WikipediaSuggest extends SimpleSwingApplication {
     val text = new TextField(columns = 60)
     val list = new ListView(ListBuffer[String]())
     val status = new Label(" ")
+    val wikilabel = new Label {
+      icon = new javax.swing.ImageIcon(javax.imageio.ImageIO.read(this.getClass.getResourceAsStream("/wiki-icon.png")))
+    }
 
     contents = new BoxPanel(orientation = Vertical) {
       border = EmptyBorder(top = 30, left = 30, bottom = 30, right = 30)
       contents += new BoxPanel(orientation = Horizontal) {
+        contents += wikilabel
         contents += text
         contents += button
       }
@@ -52,11 +56,17 @@ object WikipediaSuggest extends SimpleSwingApplication {
       }
     }
 
-    val responseStream: Observable[Try[List[String]]] = textStream map {
-      term => tryStream(wikiResponseStream(term)).observeOn(eventScheduler)
+    val responseStream: Observable[Try[List[String]]] = textStream map { term => 
+      val s = tryStream(wikiResponseStream(term))
+      s.subscribe(
+        x => log(s"for $term: received response $x"),
+        t => log(s"for $term: error in response: ${t.getMessage}"),
+        () => log(s"for $term: completed.")
+      )
+      s
     } concat
 
-    val responseSubscription = responseStream subscribe { _ match {
+    val responseSubscription = responseStream.observeOn(eventScheduler) subscribe { _ match {
       case Success(responses) =>
         status.text = " "
         list.listData = responses
