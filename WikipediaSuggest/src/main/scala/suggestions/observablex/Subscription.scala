@@ -1,11 +1,11 @@
+package suggestions
 package observablex
 
 import rx.lang.scala.Subscription
 import rx.util.functions.Action0
 import rx.subscriptions.Subscriptions
 
-
-object Subscription {
+object SubscriptionEx {
 
   def apply(subscription: rx.Subscription) : Subscription = subscription
 

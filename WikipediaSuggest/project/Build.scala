@@ -18,8 +18,11 @@ object BuildSettings {
       , "org.scala-lang" % "scala-swing" % "2.10.3"
       , "net.databinder.dispatch" % "dispatch-core_2.10" % "0.11.0"
       , "org.scala-lang" % "scala-reflect" % "2.10.3"
+      , "org.slf4j" % "slf4j-api" % "1.7.5"
+      , "org.slf4j" % "slf4j-simple" % "1.7.5"
     ),
-    logBuffered := false
+    logBuffered := false,
+    fork := true
   )
 }
 
