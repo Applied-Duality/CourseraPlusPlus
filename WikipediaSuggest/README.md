@@ -166,7 +166,8 @@ Finally, the observable `pages` is of little worth unless its values are rendere
 Subscribe to the `pages` observable to update the `editorpane` with the contents of the response.
 
 The final application should resemble the following screenshot.
-Below you see the Wikipedia results for the entry "Erik Meijer".
+Run your application and type in "Erik Meijer", then select the first option from the list and click "Get".
+Below you see the corresponding Wikipedia page.
 It tells us that Erik was previously a 6ft high professional footballer, so you better not mess with him!
 
 ![Application screenshot](application.png)
