@@ -2,80 +2,20 @@ package suggestions
 package gui
 
 import scala.collection.mutable.ListBuffer
-import scala.swing._
-import swing.Swing._
 import scala.collection.JavaConverters._
+import scala.concurrent._
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.swing._
+import scala.util.{ Try, Success, Failure }
+import scala.swing.event._
+import swing.Swing._
+import javax.swing.UIManager
 import Orientation._
-import java.lang.String
-import scala.Predef.String
 import observablex.SubscriptionEx
 import rx.subscriptions.CompositeSubscription
 import rx.lang.scala.Observable
-import scala.concurrent.ExecutionContext.Implicits.global
 import observablex._
 import search._
-import scala.util.{ Try, Success, Failure }
-import scala.swing.event._
-import javax.swing.UIManager
-
-class WikipediaSuggestUtils {
-
-  // TO IMPLEMENT Students implement this
-  /** Returns a stream of text field values entered in the given text field.
-   *
-   *  @param field       the text field
-   *  @return            an observable with a stream of text field updates
-   */
-  def textFieldValues(field: TextField): Observable[String] = {
-    Observable(observer => {
-      val onChanged = Reaction {
-        case value: ValueChanged =>
-          val s = value.source.asInstanceOf[TextField].text
-          observer.onNext(s)
-        case _ =>
-      }
-      field.subscribe(onChanged)
-      SubscriptionEx {
-        field.unsubscribe(onChanged)
-      }
-    })
-  }
-
-  // TO IMPLEMENT Students implement this
-  /** Returns a stream of button clicks.
-   *
-   *  @param field       the button
-   *  @return            an observable with a stream of buttons that have been clicked
-   */
-  def buttonClicks(button: Button): Observable[AbstractButton] = {
-    Observable(observer => {
-      val onClicked = Reaction {
-        case clicked: ButtonClicked => observer.onNext(clicked.source)
-        case _                      => 
-      }
-      button.subscribe(onClicked)
-      SubscriptionEx {
-        button.unsubscribe(onClicked)
-      }
-    })
-  }
-
-  def wikiSuggestResponseStream(term: String) = ObservableEx(Search.wikipediaSuggestion(term))
-
-  def wikiPageResponseStream(term: String) = ObservableEx(Search.wikipediaPage(term))
-
-  def tryStream[T](s: Observable[T]) = s map { Success(_) } onErrorReturn {
-    t => Failure(t)
-  }
-
-  def responseStream[A, B](requestStream: Observable[A], requestMethod: A => Observable[B]): Observable[Try[B]] =
-    requestStream map { term => 
-      tryStream(requestMethod(term))
-    } flatten
-
-  def validStream(s: Observable[String]) = s.map(_.replace(" ", "_"))
-
-}
 
 object WikipediaSuggest extends SimpleSwingApplication {
 
@@ -92,9 +32,13 @@ object WikipediaSuggest extends SimpleSwingApplication {
     /* gui setup */
 
     title = "Query Wikipedia"
-    minimumSize = new Dimension(800, 600)
+    minimumSize = new Dimension(900, 600)
 
-    val wikiUtils = new WikipediaSuggestUtils
+    object wikiApi extends WikipediaApi {
+      def wikipediaSuggestion(term: String) = Search.wikipediaSuggestion(term)
+      def wikipediaPage(term: String) = Search.wikipediaPage(term)
+    }
+
     val button = new Button("Get") {
       icon = new javax.swing.ImageIcon(javax.imageio.ImageIO.read(this.getClass.getResourceAsStream("/wiki-icon.png")))
     }
@@ -112,7 +56,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
       border = EmptyBorder(top = 5, left = 5, bottom = 5, right = 5)
       contents += new BoxPanel(orientation = Horizontal) {
         contents += new BoxPanel(orientation = Vertical) {
-          maximumSize = new Dimension(240, 800)
+          maximumSize = new Dimension(240, 900)
           border = EmptyBorder(top = 10, left = 10, bottom = 10, right = 10)
           contents += new BoxPanel(orientation = Horizontal) {
             maximumSize = new Dimension(640, 30)
@@ -134,16 +78,21 @@ object WikipediaSuggest extends SimpleSwingApplication {
 
     /* observables */
 
-    val clickStream = wikiUtils.buttonClicks(button).map { _ =>
+    // TO IMPLEMENT
+    val clickStream = buttonClicks(button).map { _ =>
       if (list.selection.items.nonEmpty) list.selection.items.head else ""
     }
 
-    val textStream = wikiUtils.textFieldValues(text)
+    // TO IMPLEMENT
+    val textStream = textFieldValues(text)
 
-    val suggestionStream = wikiUtils.responseStream(wikiUtils.validStream(textStream), wikiUtils.wikiSuggestResponseStream)
+    // TO IMPLEMENT
+    val suggestionStream = wikiApi.responseStream(wikiApi.validStream(textStream), wikiApi.wikiSuggestResponseStream)
 
-    val pageStream = wikiUtils.responseStream(wikiUtils.validStream(clickStream), wikiUtils.wikiPageResponseStream)
+    // TO IMPLEMENT
+    val pageStream = wikiApi.responseStream(wikiApi.validStream(clickStream), wikiApi.wikiPageResponseStream)
 
+    // TO IMPLEMENT
     val pageSubscription = pageStream.observeOn(eventScheduler) subscribe {
       _ match {
         case Success(response) =>
@@ -154,6 +103,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
       }
     }
 
+    // TO IMPLEMENT
     val suggestionSubscription = suggestionStream.observeOn(eventScheduler) subscribe {
       _ match {
         case Success(responses) =>
