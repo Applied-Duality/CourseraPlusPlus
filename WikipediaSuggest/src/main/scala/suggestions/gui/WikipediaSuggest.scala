@@ -16,6 +16,7 @@ import observablex._
 import search._
 import scala.util.{ Try, Success, Failure }
 import scala.swing.event._
+import javax.swing.UIManager
 
 class WikipediaSuggestUtils {
 
@@ -66,6 +67,14 @@ class WikipediaSuggestUtils {
 
 object WikipediaSuggest extends SimpleSwingApplication {
 
+  {
+    try {
+      UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName())
+    } catch {
+      case t: Throwable =>
+    }
+  }
+
   def top = new MainFrame {
 
     /* gui setup */
@@ -88,6 +97,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
     }
 
     contents = new BoxPanel(orientation = Vertical) {
+      border = EmptyBorder(top = 5, left = 5, bottom = 5, right = 5)
       contents += new BoxPanel(orientation = Horizontal) {
         contents += new BoxPanel(orientation = Vertical) {
           maximumSize = new Dimension(240, 800)
