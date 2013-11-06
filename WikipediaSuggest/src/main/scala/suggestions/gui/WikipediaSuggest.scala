@@ -35,11 +35,6 @@ object WikipediaSuggest extends SimpleSwingApplication {
     title = "Query Wikipedia"
     minimumSize = new Dimension(900, 600)
 
-    object wikiApi extends WikipediaApi {
-      def wikipediaSuggestion(term: String) = Search.wikipediaSuggestion(term)
-      def wikipediaPage(term: String) = Search.wikipediaPage(term)
-    }
-
     val button = new Button("Get") {
       icon = new javax.swing.ImageIcon(javax.imageio.ImageIO.read(this.getClass.getResourceAsStream("/wiki-icon.png")))
     }
@@ -80,7 +75,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
     /* observables */
 
     // TO IMPLEMENT
-    val searchTerms: Observable[String] = textFieldValues(searchTermField)
+    val searchTerms: Observable[String] = swingApi.textFieldValues(searchTermField)
 
     // TO IMPLEMENT
     val suggestions: Observable[Try[List[String]]] = wikiApi.responseStream(wikiApi.validStream(searchTerms), wikiApi.wikiSuggestResponseStream)
@@ -98,7 +93,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
     }
 
     // TO IMPLEMENT
-    val clicks: Observable[String] = buttonClicks(button) map { _ =>
+    val clicks: Observable[String] = swingApi.buttonClicks(button) map { _ =>
       if (suggestionList.selection.items.nonEmpty) suggestionList.selection.items.head else ""
     } filter (_ != "")
 
@@ -117,5 +112,30 @@ object WikipediaSuggest extends SimpleSwingApplication {
     }
 
   }
+
+  object wikiApi extends WikipediaApi {
+    def wikipediaSuggestion(term: String) = Search.wikipediaSuggestion(term)
+    def wikipediaPage(term: String) = Search.wikipediaPage(term)
+  }
+
+  object swingApi extends SwingApi {
+    type ValueChanged = scala.swing.event.ValueChanged
+    object ValueChanged {
+      def unapply(x: Event) = x match {
+        case vc: ValueChanged => Some(vc.source.asInstanceOf[TextField])
+        case _ => None
+      }
+    }
+    type ButtonClicked = scala.swing.event.ButtonClicked
+    object ButtonClicked {
+      def unapply(x: Event) = x match {
+        case bc: ButtonClicked => Some(bc.source.asInstanceOf[Button])
+        case _ => None
+      }
+    }
+    type TextField = scala.swing.TextField
+    type Button = scala.swing.Button
+  }
+
 
 }

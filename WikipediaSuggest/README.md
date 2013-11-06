@@ -22,7 +22,7 @@ Event streams can be represented using Rx `Observable`s.
 In this part of the exercise you will implement several `Observable`s that emit values whenever a Swing component event is raised.
 This is a common pattern when bridging between callback-based and reactive stream-based systems -- remember it well!
 
-Your task is to implement the following methods in `package.scala` by using the `Observable.apply(f: Observer => Subscription)` factory method:
+Your task is to implement the following methods in `SwingApi.scala` by using the `Observable.apply(f: Observer => Subscription)` factory method:
 
     def textFieldValues(field: TextField): Observable[String] = ???
 
@@ -38,7 +38,7 @@ Your next task is to implement the general method `apply` in `ObservableEx.scala
 
     def apply[T](f: Future[T])(implicit execContext: ExecutionContext): Observable[T] = ???
 
-Note: use the [`AsyncSubject`](http://netflix.github.io/RxJava/javadoc/rx/subjects/AsyncSubject.html) to do this.
+Note: use the [`ReplaySubject`](http://netflix.github.io/RxJava/javadoc/rx/subjects/ReplaySubject.html) to do this.
 
 Be sure to understand the [`Observable`](http://netflix.github.io/RxJava/javadoc/) [contract](https://github.com/Netflix/RxJava/wiki/Observable) before you begin.
 
@@ -144,6 +144,12 @@ If the `suggestions` value is not successful, we must print the error message in
 Use the `subscribe` method on `suggestions` to do this:
 
     val suggestionSubscription: Subscription = ???
+
+Note: all the updates for all the Swing components may only take place from a special thread
+called the event dispatch thread.
+To ensure that the subscription reaction takes place on the event dispatch thread,
+use the `observeOn` combinator.
+See the [JavaDoc](http://netflix.github.io/RxJava/javadoc/rx/Observable.html) for more information.
 
 Our application would be pretty boring if it were only able to give search term suggestions.
 We would like to pick one of the search term in the list of suggestions and press `Get` to obtain the
