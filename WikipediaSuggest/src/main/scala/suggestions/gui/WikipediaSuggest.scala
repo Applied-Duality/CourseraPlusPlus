@@ -20,6 +20,12 @@ import javax.swing.UIManager
 
 class WikipediaSuggestUtils {
 
+  // TO IMPLEMENT Students implement this
+  /** Returns a stream of text field values entered in the given text field.
+   *
+   *  @param field       the text field
+   *  @return            an observable with a stream of text field updates
+   */
   def textFieldValues(field: TextField): Observable[String] = {
     Observable(observer => {
       val onChanged = Reaction {
@@ -35,6 +41,12 @@ class WikipediaSuggestUtils {
     })
   }
 
+  // TO IMPLEMENT Students implement this
+  /** Returns a stream of button clicks.
+   *
+   *  @param field       the button
+   *  @return            an observable with a stream of buttons that have been clicked
+   */
   def buttonClicks(button: Button): Observable[AbstractButton] = {
     Observable(observer => {
       val onClicked = Reaction {
@@ -80,7 +92,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
     /* gui setup */
 
     title = "Query Wikipedia"
-    minimumSize = new Dimension(720, 480)
+    minimumSize = new Dimension(800, 600)
 
     val wikiUtils = new WikipediaSuggestUtils
     val button = new Button("Get") {
@@ -91,7 +103,7 @@ object WikipediaSuggest extends SimpleSwingApplication {
     val status = new Label(" ")
     val editorpane = new EditorPane {
       import javax.swing.border._
-      border = new BevelBorder(BevelBorder.LOWERED)
+      border = new EtchedBorder(EtchedBorder.LOWERED)
       editable = false
       peer.setContentType("text/html")
     }
