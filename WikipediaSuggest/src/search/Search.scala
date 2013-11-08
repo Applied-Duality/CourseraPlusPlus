@@ -1,6 +1,6 @@
 package search
 
-import bindings.{Country, GeoCoordinate, EarthQuake}
+import bindings.{FeatureCollection, Country, GeoCoordinate, EarthQuake}
 import org.json4s._
 import scala.concurrent.{ ExecutionContext, Future }
 import scala.language.postfixOps
@@ -14,6 +14,10 @@ import rx.lang.scala.Observable
 import observablex.{Scheduler, ObservableEx}
 import ObservableEx._
 import scala.collection.JavaConversions
+import retrofit.{Callback, RestAdapter}
+import retrofit.http.GET
+import retrofit.client.Response
+import com.google.gson.{ JsonElement}
 
 object Search {
 
@@ -61,6 +65,7 @@ object Search {
       val json = (JsonParser.parse(response)\"features").children
       Try(json.map(EarthQuake(_))).getOrElse(List())
     }
+
 
   }
 

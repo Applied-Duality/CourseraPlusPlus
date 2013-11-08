@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7942987d-56b2-4b57-956e-5353ec7f682c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/src/observablex/ObservableEx.scala" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/observablex/ObservableEx.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/src/observablex/Scheduler.scala" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/observablex/Scheduler.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/bindings/FeatureCollection.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/search/USGS.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/src/bindings/Country.scala" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/bindings/Country.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/src/Main.scala" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/Main.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/src/search/Search.scala" afterPath="$PROJECT_DIR$/WikipediaSuggest/src/search/Search.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WikipediaSuggest/WikipediaSuggest.iml" afterPath="$PROJECT_DIR$/WikipediaSuggest/WikipediaSuggest.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="WikipediaSuggest.iws" />
@@ -14,28 +18,28 @@
     <file path="/Sample.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381765541090" ignored="false" />
     <file path="$PROJECT_DIR$/../Swing/src/Swing.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381668045901" ignored="false" />
     <file path="/Swing.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381503886883" ignored="false" />
-    <file path="$PROJECT_DIR$/../Swing/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383592062826" ignored="false" />
+    <file path="$PROJECT_DIR$/../Swing/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383754054108" ignored="false" />
     <file path="$PROJECT_DIR$/../Swing/.idea/misc.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381061842092" ignored="false" />
     <file path="$PROJECT_DIR$/../Hello Scala/src/Hello.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381677941421" ignored="false" />
     <file path="/Hello.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381677923535" ignored="false" />
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/concurrent/Future.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381156940348" ignored="false" />
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/concurrent/Promise.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381166905301" ignored="false" />
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/concurrent/impl/Future.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381173931963" ignored="false" />
-    <file path="/fragment.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383590603890" ignored="false" />
-    <file path="/Search.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383591813296" ignored="false" />
-    <file path="/EarthQuake.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383574675032" ignored="false" />
+    <file path="/fragment.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383908407922" ignored="false" />
+    <file path="/Search.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383902067321" ignored="false" />
+    <file path="/EarthQuake.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383907953309" ignored="false" />
     <file path="/ObservableEx.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383591944741" ignored="false" />
     <file path="/a.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381239723232" ignored="false" />
     <file path="$PROJECT_DIR$/../RxSamples/src/Samples.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381936728943" ignored="false" />
     <file path="/Samples.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381911505632" ignored="false" />
     <file path="$PROJECT_DIR$/../Subscriptions/src/Subscriptions.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381569519214" ignored="false" />
     <file path="/Subscriptions.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381568627582" ignored="false" />
-    <file path="$PROJECT_DIR$/../CourseExamples/src/PrinciplesOfReactiveProgramming.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381663748127" ignored="false" />
+    <file path="$PROJECT_DIR$/../CourseExamples/src/PrinciplesOfReactiveProgramming.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383754268113" ignored="false" />
     <file path="/PrinciplesOfReactiveProgramming.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381580966603" ignored="false" />
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/util/Try.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381595379169" ignored="false" />
     <file path="$PROJECT_DIR$/../RemoteObservable/src/Reactive.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381826084081" ignored="false" />
     <file path="/Reactive.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381814226594" ignored="false" />
-    <file path="/Dummy.txt" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383591268430" ignored="false" />
+    <file path="/Dummy.txt" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383754068018" ignored="false" />
     <file path="$PROJECT_DIR$/../RxSamples/RxSamples.iml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381829240563" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/main.iml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381829309323" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/scala/nodescala/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382351837675" ignored="false" />
@@ -45,7 +49,7 @@
     <file path="/HttpListener.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381948356095" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/scala/nodescala/nodescala.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382351837675" ignored="false" />
     <file path="/nodescala.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381874658799" ignored="false" />
-    <file path="/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382353315481" ignored="false" />
+    <file path="/Main.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383913275264" ignored="false" />
     <file path="/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/jre/lib/rt.jar!/com/sun/net/httpserver/HttpExchange.class" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381851547651" ignored="false" />
     <file path="$PROJECT_DIR$/../scala-2.10.2/src/scala-actors-src.jar!/scala/actors/Reactor.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1381945345018" ignored="false" />
     <file path="$USER_HOME$/Coursera/src/main/scala/nodescala/package.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1382351732208" ignored="false" />
@@ -60,6 +64,12 @@
     <file path="$PROJECT_DIR$/../CourseExamples/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383591157747" ignored="false" />
     <file path="$PROJECT_DIR$/../Hello Java/.idea/workspace.xml" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383591158144" ignored="false" />
     <file path="/Scheduler.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383591999664" ignored="false" />
+    <file path="$PROJECT_DIR$/../RxJavaFork/rxjava-core/src/main/java/rx/operators/OperationMap.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383757604242" ignored="false" />
+    <file path="/OperationMap.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383757527906" ignored="false" />
+    <file path="$PROJECT_DIR$/../Hello Java/src/Hello.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383818426621" ignored="false" />
+    <file path="/Hello.java" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383810361102" ignored="false" />
+    <file path="/Country.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383907626711" ignored="false" />
+    <file path="/FeatureCollection.scala" changelist="7942987d-56b2-4b57-956e-5353ec7f682c" time="1383914155393" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +133,71 @@
       <file leaf-file-name="Main.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/Main.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="234" selection-end="234" vertical-scroll-proportion="0.45081967">
+            <state line="30" column="0" selection-start="872" selection-end="872" vertical-scroll-proportion="1.0458221">
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Search.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/search/Search.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#16#87#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="USGS.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/search/USGS.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="6" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#16#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureCollection.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/FeatureCollection.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="55" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#18#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Country.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/Country.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="6" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#18#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EarthQuake.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/EarthQuake.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="673" selection-end="813" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeoCoordinate.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/GeoCoordinate.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,22 +223,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/observablex/Subscription.scala" />
-        <option value="$PROJECT_DIR$/src/observablex/ObservableEx.scala" />
         <option value="$PROJECT_DIR$/src/gui/swing.scala" />
         <option value="$PROJECT_DIR$/src/gui/Swing.scala" />
         <option value="$PROJECT_DIR$/src/gui/Reaction.scala" />
         <option value="$PROJECT_DIR$/src/WikipediaSuggest.scala" />
-        <option value="$PROJECT_DIR$/WikipediaSuggest/src/bindings/Country.scala" />
-        <option value="$PROJECT_DIR$/WikipediaSuggest/src/bindings/EarthQuake.scala" />
         <option value="$PROJECT_DIR$/WikipediaSuggest/src/bindings/GeoCoordinate.scala" />
         <option value="$PROJECT_DIR$/WikipediaSuggest/src/observablex/Subscription.scala" />
         <option value="$PROJECT_DIR$/WikipediaSuggest/src/gui/Swing.scala" />
         <option value="$PROJECT_DIR$/WikipediaSuggest/src/gui/Reaction.scala" />
-        <option value="$PROJECT_DIR$/WikipediaSuggest/src/Main.scala" />
-        <option value="$PROJECT_DIR$/WikipediaSuggest/src/search/Search.scala" />
         <option value="$PROJECT_DIR$/WikipediaSuggest/src/observablex/Scheduler.scala" />
         <option value="$PROJECT_DIR$/WikipediaSuggest/src/observablex/ObservableEx.scala" />
+        <option value="$PROJECT_DIR$/WikipediaSuggest/src/bindings/Country.scala" />
+        <option value="$PROJECT_DIR$/WikipediaSuggest/src/bindings/EarthQuake.scala" />
+        <option value="$PROJECT_DIR$/WikipediaSuggest/src/search/Search.scala" />
+        <option value="$PROJECT_DIR$/WikipediaSuggest/src/search/USGS.scala" />
+        <option value="$PROJECT_DIR$/WikipediaSuggest/src/bindings/FeatureCollection.scala" />
+        <option value="$PROJECT_DIR$/WikipediaSuggest/src/Main.scala" />
       </list>
     </option>
   </component>
@@ -212,9 +286,19 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="WikipediaSuggest" />
@@ -277,8 +361,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="observablex" />
+              <option name="myItemId" value="bindings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeoCoordinate.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -295,37 +383,81 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="observablex" />
+              <option name="myItemId" value="bindings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Scheduler.scala" />
+              <option name="myItemId" value="FeatureCollection.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bindings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EarthQuake.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WikipediaSuggest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bindings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Country.scala" />
               <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="62" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="70" />
     <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="70" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="Repository.Attach.JavaDocs" value="true" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="68" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="69" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/observablex" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="78" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="782" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="784" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="73" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="70" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="77" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="772" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="772" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="69" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -334,11 +466,11 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/WikipediaSuggest/bindings" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
@@ -346,18 +478,18 @@
     <property name="project.structure.side.proportion" value="0.42586002" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/WikipediaSuggest" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="search" />
       <recent name="bindings" />
       <recent name="gui" />
       <recent name="observablex" />
-      <recent name="search" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/WikipediaSuggest" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -397,14 +529,14 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="WikipediaSuggest" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -415,12 +547,38 @@
       <option name="testName" />
       <method />
     </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
+      <module name="" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -449,19 +607,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -558,7 +703,11 @@
       <created>1383591195033</created>
       <updated>1383591195033</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Removed ()=&gt;work inside closure ....">
+      <created>1383592136119</created>
+      <updated>1383592136119</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -591,16 +740,16 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42774567" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45472062" sideWeight="0.625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12716763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3256262" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299595" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24903475" sideWeight="0.914611" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2109375" sideWeight="0.8574181" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24084778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.265625" sideWeight="0.8131021" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18689787" sideWeight="0.375" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5263158" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -650,7 +799,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Before restarting IntelliJ" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed ()=&gt;work inside closure ...." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -673,6 +822,7 @@
     <MESSAGE value="Nearly back to a working state" />
     <MESSAGE value="Compiles and runs again" />
     <MESSAGE value="Before restarting IntelliJ" />
+    <MESSAGE value="Removed ()=&gt;work inside closure ...." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -682,61 +832,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/WikipediaSuggest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="22" selection-start="1119" selection-end="1119" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Coursera/lib/rxjava-scala-0.14.6-sources.jar!/rx/lang/scala/ImplicitFunctionConversions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="7" selection-start="1023" selection-end="1023" vertical-scroll-proportion="-1.9090909" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/gui/Swing.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="59" selection-start="1413" selection-end="1413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/gui/Reaction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="7" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/Country.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/EarthQuake.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="204" selection-end="204" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/GeoCoordinate.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="6" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/observablex/Subscription.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Scala-libs/async-master/target/scala-2.10/scala-async_2.10-1.0.0-SNAPSHOT-sources.jar!/scala/async/AsyncBase.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="7" selection-start="297" selection-end="297" vertical-scroll-proportion="0.0" />
@@ -744,23 +839,7 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../scala-2.10.2/src/scala-library-src.jar!/scala/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="7" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.33197555">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Coursera/lib/rxjava-scala-0.14.6-sources.jar!/rx/lang/scala/Observable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1815" column="7" selection-start="84721" selection-end="84721" vertical-scroll-proportion="0.23430963">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/search/Search.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="4" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.5417515">
-          <folding />
-        </state>
+        <state line="47" column="7" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.33197555" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/observablex/Scheduler.scala">
@@ -772,17 +851,157 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/observablex/ObservableEx.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="830" selection-end="830" vertical-scroll-proportion="0.67209774">
+        <state line="36" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#21#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Coursera/lib/rxjava-core-0.14.6-sources.jar!/rx/Observable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="623" column="44" selection-start="26169" selection-end="26169" vertical-scroll-proportion="-13.846154">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4925#4941#0" expanded="false" />
+            <element signature="e#19008#19218#0" expanded="false" />
+            <element signature="e#19202#19203#0" expanded="false" />
+            <element signature="e#19599#20189#0" expanded="false" />
+            <element signature="e#20173#20174#0" expanded="false" />
+            <element signature="e#27952#27982#0" expanded="false" />
+            <element signature="e#28913#28943#0" expanded="false" />
+            <element signature="e#29924#29954#0" expanded="false" />
+            <element signature="e#30985#31015#0" expanded="false" />
+            <element signature="e#32096#32126#0" expanded="false" />
+            <element signature="e#33257#33287#0" expanded="false" />
+            <element signature="e#34468#34498#0" expanded="false" />
+            <element signature="e#35729#35759#0" expanded="false" />
+            <element signature="e#37040#37070#0" expanded="false" />
+            <element signature="e#38366#38396#0" expanded="false" />
+            <element signature="e#43755#43785#0" expanded="false" />
+            <element signature="e#44880#44910#0" expanded="false" />
+            <element signature="e#46103#46133#0" expanded="false" />
+            <element signature="e#47420#47450#0" expanded="false" />
+            <element signature="e#48831#48861#0" expanded="false" />
+            <element signature="e#50336#50366#0" expanded="false" />
+            <element signature="e#51935#51965#0" expanded="false" />
+            <element signature="e#53628#53658#0" expanded="false" />
+            <element signature="e#55718#55748#0" expanded="false" />
+            <element signature="e#56835#56865#0" expanded="false" />
+            <element signature="e#58001#58031#0" expanded="false" />
+            <element signature="e#59267#59297#0" expanded="false" />
+            <element signature="e#60633#60663#0" expanded="false" />
+            <element signature="e#62099#62129#0" expanded="false" />
+            <element signature="e#63665#63695#0" expanded="false" />
+            <element signature="e#65331#65361#0" expanded="false" />
+            <element signature="e#68521#68551#0" expanded="false" />
+            <element signature="e#70177#70207#0" expanded="false" />
+            <element signature="e#71939#71969#0" expanded="false" />
+            <element signature="e#73807#73837#0" expanded="false" />
+            <element signature="e#75781#75811#0" expanded="false" />
+            <element signature="e#77861#77891#0" expanded="false" />
+            <element signature="e#80047#80077#0" expanded="false" />
+            <element signature="e#82339#82369#0" expanded="false" />
+            <element signature="e#102604#102776#0" expanded="false" />
+            <element signature="e#102765#102766#0" expanded="false" />
+            <element signature="e#151288#151551#0" expanded="false" />
+            <element signature="e#151540#151541#0" expanded="false" />
+            <element signature="e#159289#159452#0" expanded="false" />
+            <element signature="e#159441#159442#0" expanded="false" />
+            <element signature="e#167306#167336#0" expanded="false" />
+            <element signature="e#177000#177163#0" expanded="false" />
+            <element signature="e#177152#177153#0" expanded="false" />
+            <element signature="e#221055#221187#0" expanded="false" />
+            <element signature="e#221176#221177#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Coursera/lib/rxjava-scala-0.14.6-sources.jar!/rx/lang/scala/Observable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1903" column="23" selection-start="88498" selection-end="88499" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/retrofit-1.2.2-sources.jar!/retrofit/Callback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="17" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.2.4-sources.jar!/com/google/gson/Gson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="23" selection-start="3906" selection-end="3910" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/gson-2.2.4-sources.jar!/com/google/gson/JsonElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="1060" selection-end="1060" vertical-scroll-proportion="-0.08196721">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/search/Search.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="604" selection-end="604" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#16#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/search/USGS.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="6" selection-start="107" selection-end="107" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#16#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/Country.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="6" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#18#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/EarthQuake.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="673" selection-end="813" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/GeoCoordinate.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="7" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/bindings/FeatureCollection.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="55" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#18#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WikipediaSuggest/src/Main.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="234" selection-end="234" vertical-scroll-proportion="0.45081967">
-          <folding />
+        <state line="30" column="0" selection-start="872" selection-end="872" vertical-scroll-proportion="1.0458221">
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -815,7 +1034,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-compiler</last-edited>
+          <last-edited>com.squareup.retrofit:retrofit:1.2.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -851,7 +1070,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>scala-library</last-edited>
+          <last-edited>net.databinder.dispatch:dispatch-core_2.10:0.11.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

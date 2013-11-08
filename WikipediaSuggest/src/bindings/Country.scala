@@ -14,7 +14,6 @@ class Country(raw: JValue) {
 
   private def json: JValue  = raw
 
-
   lazy val Name: String = { Try((json\"countryName").extract[String]).getOrElse("not found") }
   lazy val Code: String = { Try((json\"countryCode").extract[String]).getOrElse("not found") }
   lazy val Region: String = { Try((json\"adminName1").extract[String]).getOrElse("not found") }
