@@ -4,61 +4,43 @@ import com.google.gson.annotations.SerializedName
 import java.util.Date
 
 class FeatureCollection {
-  var metadata : MetaData = _
-  var features : Array[Feature] = _
+  val metadata : MetaData = null
+  val features : Array[Feature] = null
 
-  override def toString(): String =
-    s"{ 'metadata':'${metadata}', 'features':'$features' }";
-
+  override def toString() = s"{ 'metadata':'${metadata}', 'features':[${features.map(_.toString()).reduceLeft((x,s)=> s"$x,\n $s")}] }";
 }
 
 class MetaData {
-  var url: String = ""
-  var count: Integer = _
-  var title: String = ""
+  val url: String = null
+  val title: String = null
 
-  override def toString(): String =
-    s"{ 'url':'${url}', 'title':'${title}' }";
-
+  override def toString() = s"{ 'url':'${url}', 'title':'${title}' }";
 }
 
 class Feature {
-  var properties : Properties = _
-
-  var geometry: Point = _
-
-  override def toString(): String =
-    s"{ 'properties':'${properties}', 'geometry':'${geometry}' }";
-
+  val properties : Properties = null
+  val geometry: Point = null
+  override def toString() = s"{ 'properties':'${properties}', 'geometry':'${geometry}' }";
 }
 
 class Properties {
-
-  var place: String = ""
-
+  val place: String = null
   @SerializedName("time")
-  private var _time: Long = _
-
+  private val _time: Long = 0L
   @transient
   lazy val time: Date = new Date(_time)
+  val magnitude: Double = 0D
 
-  var magnitude: Double = _
-
-  override def toString(): String =
-    s"{ 'time':'${time}', 'place':'${place}', 'magnitude':'${magnitude}' }";
+  override def toString() = s"{ 'time':'${time}', 'place':'${place}', 'magnitude':'${magnitude}' }";
 
 }
 
 class Point {
-  private var coordinates: Array[Double] = _
-
-  @transient
+  private val coordinates: Array[Double] = null
   lazy val Latitude: Double = coordinates(1)
-  @transient
   lazy val Longitude  : Double = coordinates(0)
-  @transient
   lazy val Altitude  : Double  = coordinates(2)
 
-  override def toString(): String = s"{ 'longitude':'${Longitude}', 'latitude':'${Latitude}', 'altitude':'${Altitude}' }";
+  override def toString() = s"{ 'longitude':'${Longitude}', 'latitude':'${Latitude}', 'altitude':'${Altitude}' }";
 
 }

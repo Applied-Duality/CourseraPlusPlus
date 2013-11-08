@@ -25,7 +25,7 @@ object Main {
      }
 
      def success(t: FeatureCollection, response: Response): Unit = {
-      t.features.map(f => println(f))
+       println(t)
      }
    })
 
