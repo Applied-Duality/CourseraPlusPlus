@@ -20,6 +20,7 @@ object BuildSettings {
       , "org.scala-lang" % "scala-reflect" % "2.10.3"
       , "org.slf4j" % "slf4j-api" % "1.7.5"
       , "org.slf4j" % "slf4j-simple" % "1.7.5"
+      , "com.squareup.retrofit" % "retrofit" % "1.0.0"
     ),
     logBuffered := false,
     fork := true
