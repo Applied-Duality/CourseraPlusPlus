@@ -50,7 +50,6 @@ object Search {
         JField("text", JObject(tfields)) <- fields
         JField("*", JString(text)) <- tfields
       } yield text
-      println(response)
       text.head
     }
   }
