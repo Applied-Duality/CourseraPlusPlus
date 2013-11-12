@@ -14,6 +14,7 @@ import Orientation._
 import observablex.SubscriptionEx
 import rx.subscriptions.CompositeSubscription
 import rx.lang.scala.Observable
+import rx.lang.scala.Subscription
 import observablex._
 import search._
 
@@ -34,16 +35,11 @@ object WikipediaSuggest extends SimpleSwingApplication {
     title = "Query Wikipedia"
     minimumSize = new Dimension(900, 600)
 
-    object wikiApi extends WikipediaApi {
-      def wikipediaSuggestion(term: String) = Search.wikipediaSuggestion(term)
-      def wikipediaPage(term: String) = Search.wikipediaPage(term)
-    }
-
     val button = new Button("Get") {
       icon = new javax.swing.ImageIcon(javax.imageio.ImageIO.read(this.getClass.getResourceAsStream("/wiki-icon.png")))
     }
-    val text = new TextField
-    val list = new ListView(ListBuffer[String]())
+    val searchTermField = new TextField
+    val suggestionList = new ListView(ListBuffer[String]())
     val status = new Label(" ")
     val editorpane = new EditorPane {
       import javax.swing.border._
@@ -61,9 +57,9 @@ object WikipediaSuggest extends SimpleSwingApplication {
           contents += new BoxPanel(orientation = Horizontal) {
             maximumSize = new Dimension(640, 30)
             border = EmptyBorder(top = 5, left = 0, bottom = 5, right = 0)
-            contents += text
+            contents += searchTermField
           }
-          contents += new ScrollPane(list)
+          contents += new ScrollPane(suggestionList)
           contents += new BorderPanel {
             maximumSize = new Dimension(640, 30)
             add(button, BorderPanel.Position.Center)
@@ -79,21 +75,33 @@ object WikipediaSuggest extends SimpleSwingApplication {
     /* observables */
 
     // TO IMPLEMENT
-    val clickStream = buttonClicks(button).map { _ =>
-      if (list.selection.items.nonEmpty) list.selection.items.head else ""
+    val searchTerms: Observable[String] = swingApi.textFieldValues(searchTermField)
+
+    // TO IMPLEMENT
+    val suggestions: Observable[Try[List[String]]] = wikiApi.responseStream(wikiApi.validStream(searchTerms), wikiApi.wikiSuggestResponseStream)
+
+    // TO IMPLEMENT
+    val suggestionSubscription: Subscription = suggestions.observeOn(eventScheduler) subscribe {
+      _ match {
+        case Success(responses) =>
+          status.text = " "
+          suggestionList.listData = responses
+        case Failure(t) =>
+          status.text = "Error occurred: " + t.getMessage
+          suggestionList.listData = Nil
+      }
     }
 
     // TO IMPLEMENT
-    val textStream = textFieldValues(text)
+    val clicks: Observable[String] = swingApi.buttonClicks(button) map { _ =>
+      if (suggestionList.selection.items.nonEmpty) suggestionList.selection.items.head else ""
+    } filter (_ != "")
 
     // TO IMPLEMENT
-    val suggestionStream = wikiApi.responseStream(wikiApi.validStream(textStream), wikiApi.wikiSuggestResponseStream)
+    val pages: Observable[Try[String]] = wikiApi.responseStream(wikiApi.validStream(clicks), wikiApi.wikiPageResponseStream)
 
     // TO IMPLEMENT
-    val pageStream = wikiApi.responseStream(wikiApi.validStream(clickStream), wikiApi.wikiPageResponseStream)
-
-    // TO IMPLEMENT
-    val pageSubscription = pageStream.observeOn(eventScheduler) subscribe {
+    val pageSubscription: Subscription = pages.observeOn(eventScheduler) subscribe {
       _ match {
         case Success(response) =>
           status.text = " "
@@ -103,18 +111,31 @@ object WikipediaSuggest extends SimpleSwingApplication {
       }
     }
 
-    // TO IMPLEMENT
-    val suggestionSubscription = suggestionStream.observeOn(eventScheduler) subscribe {
-      _ match {
-        case Success(responses) =>
-          status.text = " "
-          list.listData = responses
-        case Failure(t) =>
-          status.text = "Error occurred: " + t.getMessage
-          list.listData = Nil
+  }
+
+  object wikiApi extends WikipediaApi {
+    def wikipediaSuggestion(term: String) = Search.wikipediaSuggestion(term)
+    def wikipediaPage(term: String) = Search.wikipediaPage(term)
+  }
+
+  object swingApi extends SwingApi {
+    type ValueChanged = scala.swing.event.ValueChanged
+    object ValueChanged {
+      def unapply(x: Event) = x match {
+        case vc: ValueChanged => Some(vc.source.asInstanceOf[TextField])
+        case _ => None
       }
     }
-
+    type ButtonClicked = scala.swing.event.ButtonClicked
+    object ButtonClicked {
+      def unapply(x: Event) = x match {
+        case bc: ButtonClicked => Some(bc.source.asInstanceOf[Button])
+        case _ => None
+      }
+    }
+    type TextField = scala.swing.TextField
+    type Button = scala.swing.Button
   }
+
 
 }

@@ -22,8 +22,12 @@ trait WikipediaApi {
    */
   def wikipediaPage(term: String): Future[String]
 
+  /** Returns an `Observable` with a list of possible completions for a search `term`.
+   */
   def wikiSuggestResponseStream(term: String) = ObservableEx(wikipediaSuggestion(term))
 
+  /** Returns an `Observable` with the contents of the Wikipedia page for the given search `term`.
+   */
   def wikiPageResponseStream(term: String) = ObservableEx(wikipediaPage(term))
 
   // TO IMPLEMENT

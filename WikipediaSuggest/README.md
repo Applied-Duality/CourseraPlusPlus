@@ -22,7 +22,7 @@ Event streams can be represented using Rx `Observable`s.
 In this part of the exercise you will implement several `Observable`s that emit values whenever a Swing component event is raised.
 This is a common pattern when bridging between callback-based and reactive stream-based systems -- remember it well!
 
-Your task is to implement the following methods in `package.scala` by using the `Observable.apply(f: Observer => Subscription)` factory method:
+Your task is to implement the following methods in `SwingApi.scala` by using the `Observable.apply(f: Observer => Subscription)` factory method:
 
     def textFieldValues(field: TextField): Observable[String] = ???
 
@@ -38,7 +38,7 @@ Your next task is to implement the general method `apply` in `ObservableEx.scala
 
     def apply[T](f: Future[T])(implicit execContext: ExecutionContext): Observable[T] = ???
 
-Note: use the [`AsyncSubject`](http://netflix.github.io/RxJava/javadoc/rx/subjects/AsyncSubject.html) to do this.
+Note: use the [`ReplaySubject`](http://netflix.github.io/RxJava/javadoc/rx/subjects/ReplaySubject.html) to do this.
 
 Be sure to understand the [`Observable`](http://netflix.github.io/RxJava/javadoc/) [contract](https://github.com/Netflix/RxJava/wiki/Observable) before you begin.
 
@@ -123,13 +123,60 @@ Open `WikipediaSuggest.scala` -- you will see the body of the main Scala Swing b
 The pieces that concern the static part of the UI are already implemented for you -- your task
 is to add some reactive behaviour to this application.
 
+The UI currently contains a text field called `searchTermField`.
+Your first task is to construct an observable of text field entries called `searchTerms`:
 
+    val searchTerms: Observable[String] = ???
+
+Next, use the `searchTerms` observable to create an observable of lists of suggestions that where
+each list of suggestion corresponds to one search term.
+If any of the suggestion lists requests fails, we would like to have the throwable to print the
+error message, so we wrap the result into a `Try`.
+Use the methods defined earlier in the `WikipediaApi`:
+
+    val suggestions: Observable[Try[List[String]]] = ???
+
+The `suggestions` observable should now be updated while you type.
+Problem is -- there is no way to see these changes yet in the UI!
+To display them, we need to update the contents of a component called `suggestionList`
+every time the observable produces a value.
+If the `suggestions` value is not successful, we must print the error message into the `status` label.
+Use the `subscribe` method on `suggestions` to do this:
+
+    val suggestionSubscription: Subscription = ???
+
+Note: all the updates for all the Swing components may only take place from a special thread
+called the event dispatch thread.
+To ensure that the subscription reaction takes place on the event dispatch thread,
+use the `observeOn` combinator.
+See the [JavaDoc](http://netflix.github.io/RxJava/javadoc/rx/Observable.html) for more information.
+
+Our application would be pretty boring if it were only able to give search term suggestions.
+We would like to pick one of the search term in the list of suggestions and press `Get` to obtain the
+contents of the corresponding Wikipedia page and display it in the panel on the right side of the UI.
+
+Your first task will be to obtain an observable `clicks` of button clicks that
+contains the search terms selected in the suggestion list at the time the button was clicked.
+If the suggestion list had no items selected, then the click should not be part of `clicks`.
+
+    val clicks: Observable[String] = ???
+
+Next, use the `clicks` observable to obtain an observable of the Wikipedia pages corresponding to
+the respective search term (use the previously defined methods from the `WikipediaApi`):
+
+    val pages: Observable[Try[String]] = ???
+
+Again, requests above may fail, so we want to wrap them into `Try`.
+
+Finally, the observable `pages` is of little worth unless its values are rendered somewhere.
+Subscribe to the `pages` observable to update the `editorpane` with the contents of the response.
 
 The final application should resemble the following screenshot.
-Below you see the Wikipedia results for the entry "Erik Meijer".
+Run your application and type in "Erik Meijer", then select the first option from the list and click "Get".
+Below you see the corresponding Wikipedia page.
 It tells us that Erik was previously a 6ft high professional footballer, so you better not mess with him!
 
-![Final application](application.png)
+![Application screenshot](application.png)
 
 
 

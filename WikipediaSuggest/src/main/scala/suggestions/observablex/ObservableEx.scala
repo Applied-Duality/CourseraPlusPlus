@@ -19,7 +19,7 @@ object ObservableEx {
    *  @return        an observable completed after producing the value of the future, or with an exception
    */
   def apply[T](f: Future[T])(implicit execContext: ExecutionContext): Observable[T] = {
-    val s = rx.subjects.AsyncSubject.create[T]()
+    val s = rx.subjects.ReplaySubject.create[T]()
     f.onComplete {
       case Failure(e) => 
         s.onError(e)
